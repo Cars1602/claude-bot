@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1006011488940",
+    "project_id": "agarre-de-senales-e91f9",
+    "storage_bucket": "agarre-de-senales-e91f9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006011488940:android:9f22fb8fa7874bbe335d09",
+        "android_client_info": {
+          "package_name": "com.example.cloudbot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa0ETvN8Otox1swBx9py3u-LpVq5U6PGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_rename_btn" android:title="Renombrar"/>
+    <item android:id="@+id/action_delete_btn" android:title="Eliminar"/>
+</menu>
