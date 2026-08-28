@@ -5,12 +5,14 @@ import androidx.room.Room
 import com.example.cloudbot.data.db.AppDatabase
 import com.example.cloudbot.data.repo.DeviceRepository
 import com.example.cloudbot.data.repo.FirestoreSignalRepository
+import com.example.cloudbot.data.repo.RealtimePowerRepository
 import com.example.cloudbot.data.repo.RemoteRepository
 
 object ServiceLocator {
 
     @Volatile private var db: AppDatabase? = null
     @Volatile private var fireRepo: FirestoreSignalRepository? = null
+    @Volatile private var realtimeRepo: RealtimePowerRepository? = null
 
     fun database(context: Context): AppDatabase {
         return db ?: synchronized(this) {
@@ -38,6 +40,12 @@ object ServiceLocator {
     fun firestoreSignalRepo(): FirestoreSignalRepository {
         return fireRepo ?: synchronized(this) {
             fireRepo ?: FirestoreSignalRepository().also { fireRepo = it }
+        }
+    }
+
+    fun realtimePowerRepo(): RealtimePowerRepository {
+        return realtimeRepo ?: synchronized(this) {
+            realtimeRepo ?: RealtimePowerRepository().also { realtimeRepo = it }
         }
     }
 }

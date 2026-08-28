@@ -62,6 +62,7 @@ dependencies {
 
     implementation(platform(libs.firebase.bom))
     implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.firebase:firebase-database")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
